@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+
 }
 
 
@@ -19,7 +20,7 @@
 
 .container{
 	width: 1160px;
-
+	margin: auto;
 }
 
 .main h1{
@@ -36,7 +37,6 @@
   color: #ffffff;
 }
 .main .container{
-	padding-left: 103px;
 	padding-top: 70px; 
 }
 
@@ -116,15 +116,24 @@
 }
 
 
-.essay .container{
-	padding-top: 60px;
-	padding-left: 103px;
+.cont{
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1160px;
+
 }
-.essay .content{
+.content{
 	float: left;
+	width: 750px;
 }
-.essay .content h2{
-  width: 341px;
+
+.essay .content{
+	height: 615px;
+}
+
+
+.content h2{
   height: 20px;
   font-family: Montserrat;
   font-size: 18px;
@@ -136,8 +145,11 @@
   color: #290b7c;
   padding-bottom: 20px;
 }
+.content p{
+	margin-bottom: 1em;
+}
 
-.essay .content .text{
+.content .text{
 	width: 750px;
 	height: 506px;
 	font-family: Montserrat;
@@ -150,24 +162,29 @@
 	color: #333333;
 	color: var(--black);
 }
-.essay .content .text a{
+.content .text a{
 	color: #6032e0;
 }
 
-
-.essay .sidebar{
-	float: left;
-	margin-left: 70px;
+.content .text a:hover{
+	color: #290b7c;
 }
-.essay .sidebar .card {
+
+
+.sidebar{
+	float: right;
+	margin-right: : 0px;
+}
+.essay .card {
   width: 340px;
   height: 500px;
   border-radius: 24px;
   background-color: #ffffff;
   box-shadow: 2px 4px 25px 0 rgba(0, 0, 0, 0.08);
+  position:relative;
 }
 
-.essay .sidebar .card h2{
+.essay .card h2{
 	width: 217px;
 	height: 68px;
 	font-family: Montserrat;
@@ -182,7 +199,16 @@
 	padding-top: 50px;
 }
 
-.essay .sidebar .card li{
+.essay .card .line{
+	width: 78px;
+  height: 3px;
+  background-color: #6032e0;
+	position: absolute;
+	right: 0px;
+	top: 67px;
+}
+
+.essay .card li{
 	width: 270px;
 	height: 48px;
 	font-family: Montserrat;
@@ -193,7 +219,105 @@
 	line-height: 1.33;
 	letter-spacing: normal;
 	color: #333333;
-	color: var(--black);
 	padding-left: 45px;
 	padding-top: 31px;
+	position:relative;
+}
+.essay .card ol{
+	list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset: num; /* Задаём имя счетчика */}
+.essay .card li:before {
+    content: counter(num) ''; /* Выводим число */
+    counter-increment: num; /* Увеличиваем значение счётчика */
+    position:absolute;
+    width: 43px;
+	height: 70px;
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+	background-image: linear-gradient(148deg, rgba(237, 195, 215, 0.2), rgba(212, 153, 233, 0.2) 52%, rgba(157, 124, 253, 0.3));
+	font-family: Montserrat;
+	font-size: 70px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: center;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	left:25px;
+	top: 20px;
+}
+.essay .card a{
+	text-decoration: none;
+	width: 144px;
+}
+.essay .card .card-button{
+	position: block;
+	width: 144px;
+	max-height: 49px;
+	border-radius: 24px;
+	background-color: #6032e0;
+	box-shadow: 2px 4px 13px 0 rgba(96, 50, 224, 0.3);
+	margin-top: 45px;
+	margin-left: 98px;
+	text-align: center;
+	padding: 15px 0;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+.essay .card .card-button:hover{
+	background-color: #290b7c;
+}
+
+.accord .text{
+	height: 564px;
+	margin-bottom: 65px; 
+
+}
+.accord-img{
+	width: 750px;
+	height: 350px;
+	background-color: grey;
+	float: left;
+}
+.accord .Mask {
+  	margin-top: 20px;
+	width: 340px;
+	height: 542px;
+	border-radius: 24px;
+	background-color: #ebe6ff;
+	box-shadow: 2px 4px 25px 0 rgba(0, 0, 0, 0.08);
+	position: relative;
+}
+
+.accord .Mask h2{
+	width: 217px;
+	height: 68px;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
+	color: #290b7c;
+	padding-left: 35px;
+	padding-top: 40px;
+}
+
+.accord .Mask .line{
+	width: 78px;
+  height: 3px;
+  background-color: #6032e0;
+	position: absolute;
+	right: 0px;
+	top: 58px;
 }
