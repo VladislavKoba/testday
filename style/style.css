@@ -12,7 +12,7 @@
 
 .main {
   
-  height: 342px;
+  min-height: 342px;
   opacity: 0.5;
   background-color: #6032e0;
   /*background-color: var(--burple);*/
@@ -25,7 +25,7 @@
 
 .main h1{
 	width: 938px;
-  height: 116px;
+  /*height: 116px;*/
   object-fit: contain;
   font-family: Montserrat;
   font-size: 48px;
@@ -52,7 +52,7 @@
 }
 
 .by-John-Done{
-	height: 26px;
+	/*height: 26px;*/
 	font-family: Montserrat;
 	font-size: 18px;
 	font-weight: 500;
@@ -72,7 +72,7 @@
 }
 
 .layer {
-  height: 26px;
+  /*height: 26px;*/
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 500;
@@ -86,7 +86,7 @@
 .layer:before{
 	content:  url(../img/main_shape1.svg);
 	width: 18px;
-	height: 20px;
+	/*height: 20px;*/
 	object-fit: contain;
 	padding-right: 10px;
 }
@@ -126,15 +126,16 @@
 .content{
 	float: left;
 	width: 750px;
+	margin-bottom: 35px; 
 }
 
 .essay .content{
-	height: 615px;
+	/*height: 615px;*/
 }
 
 
 .content h2{
-  height: 20px;
+  min-height: 20px;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 600;
@@ -148,10 +149,13 @@
 .content p{
 	margin-bottom: 1em;
 }
+.content p:last-child{
+	margin-bottom: 0; 
+}
 
 .content .text{
 	width: 750px;
-	height: 506px;
+	min-height: 506px;
 	font-family: Montserrat;
 	font-size: 16px;
 	font-weight: normal;
@@ -177,7 +181,7 @@
 }
 .essay .card {
   width: 340px;
-  height: 500px;
+  min-height: 500px;
   border-radius: 24px;
   background-color: #ffffff;
   box-shadow: 2px 4px 25px 0 rgba(0, 0, 0, 0.08);
@@ -186,7 +190,7 @@
 
 .essay .card h2{
 	width: 217px;
-	height: 68px;
+	min-height: 68px;
 	font-family: Montserrat;
 	font-size: 24px;
 	font-weight: 600;
@@ -210,7 +214,7 @@
 
 .essay .card li{
 	width: 270px;
-	height: 48px;
+	min-height: 48px;
 	font-family: Montserrat;
 	font-size: 18px;
 	font-weight: normal;
@@ -224,11 +228,11 @@
 	position:relative;
 }
 .essay .card ol{
-	list-style-type: none; /* Убираем исходные маркеры */
-    counter-reset: num; /* Задаём имя счетчика */}
+	list-style-type: none; 
+    counter-reset: num; }
 .essay .card li:before {
-    content: counter(num) ''; /* Выводим число */
-    counter-increment: num; /* Увеличиваем значение счётчика */
+    content: counter(num) ''; 
+    counter-increment: num; 
     position:absolute;
     width: 43px;
 	height: 70px;
@@ -278,8 +282,8 @@
 }
 
 .accord .text{
-	height: 564px;
-	margin-bottom: 65px; 
+	min-height: 564px;
+	margin-bottom: 30px; 
 
 }
 .accord-img{
@@ -291,7 +295,7 @@
 .accord .Mask {
   	margin-top: 20px;
 	width: 340px;
-	height: 542px;
+	min-height: 542px;
 	border-radius: 24px;
 	background-color: #ebe6ff;
 	box-shadow: 2px 4px 25px 0 rgba(0, 0, 0, 0.08);
@@ -300,7 +304,7 @@
 
 .accord .Mask h2{
 	width: 217px;
-	height: 68px;
+	
 	font-family: Montserrat;
 	font-size: 24px;
 	font-weight: 600;
